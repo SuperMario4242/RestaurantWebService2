@@ -23,11 +23,11 @@ services:
       POSTGRES_PASSWORD: password
   menu_db:
     extends:
-      file: Menu/menu-service/docker-compose.yml
+      file: menu-service/docker-compose.yml
       service: menu_db
   menu_service:
     extends:
-      file: Menu/menu-service/docker-compose.yml
+      file: menu-service/docker-compose.yml
       service: service
 
 
